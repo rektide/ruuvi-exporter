@@ -1,0 +1,29 @@
+{
+	"name": "ruuvi-exporter",
+	"version": "1.0.0",
+	"main": "index.js",
+	"module": "ruuvi-exporter.js",
+	"description": "Export RuuviBeacon weather-station data to Prometheus metrics",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/ruuvi-exporter"
+	},
+	"keywords": ["ruuvi", "weather", "prometheus", "metrics"],
+	"author": "rektide de la faye",
+	"license": "X11",
+	"@std/esm": {
+		"mode": "all",
+		"cjs": {
+			"namedExports": true
+		}
+	},
+	"dependencies": {
+		"node-ruuvitag": "^4.1.0"
+	},
+	"devDependencies": {
+		"@std/esm": "^0.25.2"
+	}
+}
